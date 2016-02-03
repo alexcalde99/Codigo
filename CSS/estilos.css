@@ -1,0 +1,327 @@
+.iconos{
+    width: 25px;
+    height: 25px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nuestra cabecera ocupara el 100% */
+header {
+    margin-top:10px; /*Simplemente agregamos un margen*/
+    width: 100%;
+    height: 150px; /*Le damos un alto fijo al menu*/
+    overflow: hidden; /*Agregamos un overflow hidden para que no se muestren elementos que sobrepasen los 150px de alto*/
+    position: relative; /*Convertimos el menu en posición relativa porque mas adelante en el header > nav pondremos una posición absoluta*/
+}
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:20px auto;
+    max-width:1000px;
+    width:90%;
+}
+/* para quitar los puntos */
+nav  ul{
+    list-style: none;
+}
+/* Se aplicara solo a las ul que estan despues del nav */
+nav > ul {
+    display:table;
+    width:100%;
+    background:#000;
+    position: relative;
+}
+/* los primeros li, tendran posicion tabla celda */
+nav > ul li {
+    display:table-cell;
+}
+/*SUBMENU */
+nav > ul > li:hover > ul {
+    display:block;
+    height:100%;
+}
+
+/* */
+nav > ul > li > ul {
+    display: none;
+    display:block;
+    position:absolute;
+    background:#000;
+    left:0;
+    right:0;
+    overflow:hidden;
+    height:0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul li a {
+    color:#fff;
+    display:block;  /*display block para el espaciado */
+    line-height:20px;
+    padding:20px;
+    position: relative;
+    text-align:center;
+    text-decoration:none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+    background:#5da5a2;
+}
+/* animacion para  */
+nav > ul > li > a span {
+    background:#174459;
+    display:block;
+    height:100%;
+    width:100%;
+    left:0;
+    position:absolute;
+    top:-55px; /* para desaparecerlo */
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > a span .iconos {
+    display:block;
+    line-height:60px;
+
+}
+/* para que caiga el bloque de arriba que esta escondido
+Cuando  nos pongamos encima de los a se activaran los span y caen*/
+nav > ul > li > a:hover > span {
+    top:0;
+
+}
+/*  COLORES de los SPAN que caen*/
+nav ul li a .primero {
+    background:#0e5061;
+}
+
+nav ul li a .segundo {
+    background:#5da5a2;
+}
+
+nav ul li a .tercero {
+    background:#f25724;
+}
+
+nav ul li a .cuarto {
+    background:#174459;
+}
+
+nav ul li a .quinto {
+    background:#37a4d9;
+}
+
+nav ul li a .sexto {
+    background:red;
+}
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------INCIIO BUSCADOR---------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+input[type="search"]{
+    margin-left: 15%;
+    margin-top: 0px;
+    width: 110px; /*ancho por defecto*/
+    background: #ededed no-repeat 9px center;
+    padding: 9px 10px 9px 32px;
+    border-radius: 15em;
+    position: relative;
+    float: left;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+    width: 300px; /*tamaño del boton buscar al hacer click*/
+    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+}
+#boton {
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 12px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: relative;
+    float: left;
+
+}
+
+#boton:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------CIERRE BUSCADOR---------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------login-----------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+input[type="text"]{
+    margin-left: 15px;
+    margin-top: 0px;
+    width: 110px; /*ancho por defecto*/
+    background: #ededed no-repeat 9px center;
+    padding: 9px 10px 9px 32px;
+    border-radius: 15em;
+    position: relative;
+    float: right;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="text"]:focus{
+    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+}
+
+input[type="password"]{
+    margin-left: 15px;
+    margin-top: 0px;
+    width: 110px; /*ancho por defecto*/
+    background: #ededed no-repeat 9px center;
+    padding: 9px 10px 9px 32px;
+    border-radius: 15em;
+    position: relative;
+    float: right;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="password"]:focus{
+    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+}
+
+#boton2 {
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 12px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    margin-right: 10%;
+
+}
+
+#boton2:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------CIERRE LOGIN---------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+#buscador{
+    position: relative;
+
+}
+#cabecera{
+    position: relative;
+}
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------INICIO SLIDER-----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+.slider{
+    width: 80%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; /* los elementos qu estan fuera se ocultan */
+
+}
+.slider ul{
+    display: flex; /* una imagen al lado de la otra */
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+.slider li{
+    width: 100%;
+    list-style: none; /* quitamos los puntos de las listas*/
+
+    border: 2px solid grey;
+    padding: 3px;
+
+}
+.slider img{
+    width: 100%;
+
+
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    /* del 0 al 20 la primera imagen*/
+    /*  del 20 al 25 es el tiempo de una imagen a otra, la transicion*/
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------CIERRE SLIDER-----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
