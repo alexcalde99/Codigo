@@ -142,7 +142,7 @@ input[type="search"]{
     width: 110px; /*ancho por defecto*/
     background: #ededed no-repeat 9px center;
     padding: 9px 10px 9px 32px;
-    border-radius: 15em;
+
     position: relative;
     float: left;
     -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
@@ -160,7 +160,6 @@ input[type="search"]:focus{
 #boton {
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
-    border-radius: 28px;
     text-shadow: 1px 1px 3px #666666;
     font-family: Georgia;
     color: #ffffff;
@@ -196,7 +195,6 @@ input[type="text"]{
     width: 110px; /*ancho por defecto*/
     background: #ededed no-repeat 9px center;
     padding: 9px 10px 9px 32px;
-    border-radius: 15em;
     position: relative;
     float: right;
     -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
@@ -217,7 +215,6 @@ input[type="password"]{
     width: 110px; /*ancho por defecto*/
     background: #ededed no-repeat 9px center;
     padding: 9px 10px 9px 32px;
-    border-radius: 15em;
     position: relative;
     float: right;
     -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
@@ -235,7 +232,6 @@ input[type="password"]:focus{
 #boton2 {
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
-    border-radius: 28px;
     text-shadow: 1px 1px 3px #666666;
     font-family: Georgia;
     color: #ffffff;
@@ -327,39 +323,153 @@ input[type="password"]:focus{
 /*_------------------------------------------------------------------------------------------------*/
 
 /*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------DIV CONTENEDOR (GALERIA Y EVENTOS)--------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-----------------------------CIERRE DIV CONTENEDOR (GALERIA Y EVENTOS)--------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+/*_------------------------------------------------------------------------------------------------*/
 /*_-------------------------------------INICIO GALERIA-----------------------------------------------*/
 /*_------------------------------------------------------------------------------------------------*/
+#galeria{
+    float: left;
+    width: 80%;
+}
 #galeria_inicio {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 85%;
+    width: 65%;
+    float: left;
     margin-top: 10%;
-    margin-left: auto;
+    margin-left: 10%;
     margin-right: auto;
 
 }
 
 #galeria_inicio td, #galeria_inicio th {
     border: 1px solid #ddd;
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
+#galeria_inicio a{
+    color: #000;
+}
+#galeria_inicio a:link, a:visited {
+    margin-left: 10px;
+    font-family: "Adobe Caslon Pro";
+    font-size: 12px;
+}
 
-#galeria_inicio tr:nth-child(even){background-color: #f2f2f2}
+a:hover, a:active {
+    color: grey;
+}
+
+#galeria_inicio td:hover{
+background-color: #e2dfdf;
+}
 
 #customers tr:hover {background-color: #ddd;}
 
 #galeria_inicio th {
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: #4CAF50;
+    background-color: dodgerblue;
     color: white;
 }
 #galeria_inicio img{
-    height: 15%;
-    width: 15%;
+    height: 10%;
+    width: 25%;
 }
 
 /*_------------------------------------------------------------------------------------------------*/
 /*_-------------------------------------CIERRE GALERIA-----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------INICIO EVENTOS-----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+#eventos{
+    float: left;
+    width: 20%;
+    height: auto;
+    margin-top: 10%;
+}
+#eventos a{
+    color: #000;
+}
+#eventos ul{
+    list-style:none;
+}
+#eventos span{
+    padding: 8px;
+    font-family: fantasy;
+    background-color: dodgerblue;
+    color: white;
+}
+#eventos table{
+    margin-left: -30%;
+    margin-top: -10%;
+    width: 80%;
+
+}
+#eventos td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+#eventos th{
+padding-top: 12px;
+padding-bottom: 12px;
+background-color: dodgerblue;
+color: white;
+}
+#eventos img{
+      width: 25%;
+      height: 15%;
+  }
+#eventos a{
+    text-align: right;
+    font-family: "Adobe Caslon Pro";
+    font-size: 11px;
+}
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------CIERRE EVENTOS-----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------INICIO FOOTER-----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+footer{
+    background-color: #333;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: -100%;
+}
+footer a{
+   color: white;
+
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+}
+
+.flex-item {
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10%;
+
+}
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------CIERRE FOOTER-----------------------------------------------*/
 /*_------------------------------------------------------------------------------------------------*/
