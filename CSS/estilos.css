@@ -1,3 +1,6 @@
+body{
+
+}
 .iconos{
     width: 25px;
     height: 25px;
@@ -22,8 +25,8 @@ nav {
     left:0;
     right:0;
     margin:20px auto;
-    max-width:1000px;
-    width:90%;
+    max-width:100%;
+    width:130%;
 }
 /* para quitar los puntos */
 nav  ul{
@@ -64,7 +67,7 @@ nav > ul > li > ul {
 }
 
 nav > ul li a {
-    color:#fff;
+    color:white;
     display:block;  /*display block para el espaciado */
     line-height:20px;
     padding:20px;
@@ -80,6 +83,7 @@ nav > ul li a {
 
 nav > ul > li > ul > li a:hover {
     background:#5da5a2;
+    color: white;
 }
 /* animacion para  */
 nav > ul > li > a span {
@@ -108,6 +112,8 @@ nav > ul > li > a:hover > span {
     top:0;
 
 }
+
+
 /*  COLORES de los SPAN que caen*/
 nav ul li a .primero {
     background:#0e5061;
@@ -271,6 +277,7 @@ input[type="password"]:focus{
 /*_------------------------------------------------------------------------------------------------*/
 .slider{
     width: 80%;
+    height: auto;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -289,7 +296,7 @@ input[type="password"]:focus{
     width: 100%;
     list-style: none; /* quitamos los puntos de las listas*/
 
-    border: 2px solid grey;
+
     padding: 3px;
 
 }
@@ -336,11 +343,13 @@ input[type="password"]:focus{
 #galeria{
     float: left;
     width: 80%;
+    height: 600px;
 }
 #galeria_inicio {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 65%;
+    width: 80%;
+    height: 65%;
     float: left;
     margin-top: 10%;
     margin-left: 10%;
@@ -393,7 +402,7 @@ background-color: #e2dfdf;
 #eventos{
     float: left;
     width: 20%;
-    height: auto;
+    height: 420px;
     margin-top: 10%;
 }
 #eventos a{
@@ -403,25 +412,22 @@ background-color: #e2dfdf;
     list-style:none;
 }
 #eventos span{
-    padding: 8px;
     font-family: fantasy;
     background-color: dodgerblue;
     color: white;
 }
 #eventos table{
     margin-left: -30%;
-    margin-top: -10%;
     width: 80%;
-
 }
 #eventos td {
     border: 1px solid #ddd;
     text-align: center;
-    padding: 8px;
+
 }
 #eventos th{
-padding-top: 12px;
-padding-bottom: 12px;
+
+
 background-color: dodgerblue;
 color: white;
 }
@@ -445,8 +451,8 @@ footer{
     background-color: #333;
     width: 100%;
     height: 10%;
-    position: absolute;
-    top: 200%;
+    position: relative;
+
 }
 footer a{
    color: white;
@@ -488,4 +494,68 @@ footer a{
 
 /*_------------------------------------------------------------------------------------------------*/
 /*_-------------------------------------CIERRE FOOTER-----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------PUBLICIDAAD-----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+#publicidad{
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+div#logo {
+    width: 610px;
+    height: 200px;
+    padding: 0;
+    background: url("../imagenes/adidas-logo.png") no-repeat top center black;
+    position: relative;
+    right: 100%;
+    left: 10%;
+    top:-12px;
+}
+
+div#letras {
+    padding: 0;
+    background: url("../imagenes/adidas-letras.png") no-repeat bottom center;
+    width: 30%;
+    height: 5px;
+    margin-left: 35%;
+
+
+    /* Firefox */
+    -moz-transition: height 1s linear 0.2s;
+    /* Chrome / Safari*/
+    -webkit-transition: height 1s linear 0.2s;
+    /* Opera */
+    -o-transition: height 1s linear 0.2s;
+    /* Default */
+    transition: height 1s linear 0.2s;
+}
+
+div#logo:hover div#letras {
+    height: 200px;
+}
+div#all{
+    background: url("../imagenes/allin.png") no-repeat bottom right;
+    width: 100%;
+    height: 95px;
+
+    /* Firefox */
+    -moz-transition: height 1s linear 0.2s;
+    /* Chrome / Safari*/
+    -webkit-transition: height 1s linear 0.2s;
+    /* Opera */
+    -o-transition: height 1s linear 0.2s;
+    /* Default */
+    transition: height 1s linear 0.2s;
+}
+div#logo:hover div#all {
+    height: 1px;
+}
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------CIERRE PUBLICIDAD-------------------------------------------*/
 /*_------------------------------------------------------------------------------------------------*/
