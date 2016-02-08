@@ -450,7 +450,6 @@ color: white;
 footer{
     background-color: #333;
     width: 100%;
-    height: 10%;
     position: relative;
 
 }
@@ -464,7 +463,7 @@ footer a{
     -webkit-align-items: center;
     align-items: center;
     width: 100%;
-    height: 250px;
+    height: 240px;
     background-color: black;
 
 }
@@ -559,3 +558,98 @@ div#logo:hover div#all {
 /*_------------------------------------------------------------------------------------------------*/
 /*_-------------------------------------CIERRE PUBLICIDAD-------------------------------------------*/
 /*_------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------------MI PERFIL--------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+#contenidoPerfil{
+    height: 100%;
+    width: 100%;
+
+}
+#miPerfil{
+    width: 90%;
+    height: 90%;
+}
+#miPerfil table{
+    width: 80%;
+    height: 80%;
+    border: 3px solid gainsboro;
+    margin-bottom: 5%;
+}
+#miPerfil table{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#miPerfil table thead{
+    text-align: left;
+    width: auto;
+    color: green;
+    background-color: #dffddf;
+}
+
+.editar {
+    color: blue;
+    cursor:pointer;
+}
+.titulos{
+    padding-top: 5%;
+}
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------------MIs imagenes compradas--------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+#misCompras{
+    width: 90%;
+    height: 90%;
+}
+#misCompras span{
+    text-align: left;
+    width: 80%;
+    color: green;
+    background-color: #dffddf;
+    margin-left: 15%;
+
+}
+#viajes {
+    width: 80%;
+    height: 80%;
+    border: 3px solid gainsboro;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+}
+
+.viajes-item {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+.viajes-item > img {
+    width: 45%;
+    height: 45%;
+    margin-left: 5%;
+    align-self: center;
+    -webkit-align-self: center;
+}
+.viajes-item > button {
+    width: auto;
+    align-self: center;
+    -webkit-align-self: center;
+}
+
+
+
