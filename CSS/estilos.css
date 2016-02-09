@@ -653,3 +653,167 @@ div#logo:hover div#all {
 
 
 
+
+
+
+
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_-------------------------------------------GALERIA----------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+/*_------------------------------------------------------------------------------------------------*/
+
+#navegador ul{
+    list-style-type: none;
+    text-align: center;
+}
+#navegador li{
+    display: inline;
+    text-align: center;
+
+}
+#navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+#navegador li .futbol:hover{
+    display:block;
+    height:2%;
+    background-image:url(http://www.deportes-aeromodelismo.com/images/balon%20de%20futbol.PNG);
+
+
+}
+
+.categoriasDeportes a {
+    position: relative;
+    background-color: gainsboro;
+    top: 50%;
+    left: 15%;
+    right: 15%;
+    margin: 10px;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0;
+    transform-origin: 50% 50%;
+    border: 2px solid transparent;
+    transition: all .2s ease-in;
+    color: black;
+    border: 1px solid grey;
+    padding: 3px;
+    font-size: 30px;
+
+}
+
+a:hover {
+    padding: 10px;
+    background-color: #3cb0fd;
+    text-decoration:none;
+    font-size: 35px;
+    color: #174459;
+    border: 2px solid #3cb0fd;
+    text-shadow: none;
+}
+
+/* GALLERY */
+
+.gallery {
+    width: 980px;
+    height: 700px;
+    margin: 10%;
+    overflow: scroll;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.gallery li{
+    position: relative;
+    width: 33%;
+    float: left;
+    padding: 0.625rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: width 0.3s ease-out;
+    transition: width 0.3s ease-out;
+}
+.gallery li .box {
+    position:relative;
+    padding: 6px 6px 30px 6px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.gallery li figure{
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.gallery li img{
+    width: 100%;
+    height: 50%;
+}
+.gallery li h3{
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.gallery li:nth-child(even) .box {
+    background: #eee;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:992px) {
+    .gallery {
+        width: auto;
+        height: 20%;
+    }
+}
+@media screen and (max-width:768px) {
+    .gallery li {
+        width: 50%;
+    }
+}
+@media screen and (max-width:468px) {
+    .gallery li {
+        width: 100%;
+    }
+}
+.button {
+    border: 0 none;
+    border-radius: 36px;
+    background: blue;
+    color: white;
+    padding: 6px;
+    margin-left: 40%;
+
+    cursor: pointer;
+    display: inline-block;
+
+    font-size: 10px;
+    color: #fff;
+    text-transform: none;
+
+    transition: all 80ms ease-in-out;
+}
+.button:hover {
+     opacity: .7;
+ }
+.button.-blue {
+    background: blue;
+    color: white;
+}
+
+
