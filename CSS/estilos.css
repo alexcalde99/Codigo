@@ -1,6 +1,10 @@
 body{
 
 }
+@font-face{
+    font-family: LemonMilk;
+    src: url('../fuentes/LemonMilk.otf');
+}
 .iconos{
     width: 25px;
     height: 25px;
@@ -13,6 +17,7 @@ body{
 }
 /* nuestra cabecera ocupara el 100% */
 header {
+    font-family: LemonMilk;
     margin-top:10px; /*Simplemente agregamos un margen*/
     width: 100%;
     height: 150px; /*Le damos un alto fijo al menu*/
@@ -560,8 +565,6 @@ div#letras {
     width: 30%;
     height: 5px;
     margin-left: 35%;
-
-
     /* Firefox */
     -moz-transition: height 1s linear 0.2s;
     /* Chrome / Safari*/
@@ -570,11 +573,12 @@ div#letras {
     -o-transition: height 1s linear 0.2s;
     /* Default */
     transition: height 1s linear 0.2s;
+    animation-iteration-count: infinite;
 }
 
 div#logo:hover div#letras {
-    height: 200px;
-}
+     height: 200px;
+ }
 div#all{
     background: url("../imagenes/allin.png") no-repeat bottom right;
     width: 100%;
@@ -1082,4 +1086,56 @@ button.submit:active {
 .checkout:hover {
     background-color: #494;
 }
+
+#animacionCarrito ul{
+    list-style-type:none;
+}
+
+#animacionCarrito ul>li{
+    width:550px;
+    height:200px;
+    margin-top: -220px;
+    position:relative;
+    left:0px;
+    line-height:200px;
+    color:#fff;
+}
+
+
+
+.infinita{
+    -webkit-animation-name: AnimInfinita;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:1s;
+    animation-name: AnimInfinita;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function:linear;
+    animation-delay:1s;
+
+}
+@-webkit-keyframes AnimInfinita{
+    0%{ left:0px;
+        border-radius:0px; }
+
+    50%{transform:rotate(0deg);}
+    100%{left:500px;
+        border-radius:40px;
+        margin-bottom: 20%; }
+}
+@keyframes AnimInfinita{
+    0%{left:0px;
+        border-radius:0px; }
+    50%{
+        }
+    100%{left:500px;
+        border-radius:40px;
+        }
+}
+
+
 
